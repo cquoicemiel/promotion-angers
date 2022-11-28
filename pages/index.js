@@ -74,11 +74,11 @@ const Header = () => {
 const Card = (props) => {
 
     return(
-        <div style={{minHeight: 'calc(24rem + 5vw)'}} onClick={() => {
+        <div onClick={() => {
             if(!props.state){
                 props.setState(true)
             }
-        }} className={`card transition-all rounded-2xl flex flex-col px-8 justify-around hover:z ${props.state ? "w-full z-30 h-full absolute cursor-default bg-gray-100" : "relative z-10 w-1/4 h-full shadow-md hover:shadow-xl cursor-pointer bg-white hover:bg-gray-100 "}`}>
+        }} className={`top-32 card transition-all rounded-2xl flex flex-col px-8 justify-around hover:z ${props.state ? "w-full z-30 h-full absolute cursor-default bg-gray-100" : "relative z-10 w-1/4 h-full shadow-md hover:shadow-xl cursor-pointer bg-white hover:bg-gray-100 "}`}>
             <span className={`flex items-center justify-between ${props.state && "px-16 py-8"}`}>
                 <span className={`transition-none capitalize flex  items-center text-3xl font-bold text-center my-8 ${props.state ? "justify-start" : "justify-center"}`}>{props.title}</span>
                 <Image onClick={() => props.setState(false)} className={`h-9 w-9 cursor-pointer rotate-180 ${!props.state && "hidden"}`} alt={"Fermer l'article"} src={require('../assets/arrow.png')}/>
@@ -89,8 +89,7 @@ const Card = (props) => {
                 <Image className={`arrow transition-all cover h-7 w-7 opacity-60 ${props.state && "hidden"}`} alt={"En savoir plus"} src={require('../assets/arrow.png')}/>
             </span>
             <div className={`w-full min-h-full ${!props.state && "hidden"}`}>
-                <div className='h-full w-full px-32 py-6 mt-8 overflow-scroll bg-white pb-32'>
-
+                <div className='h-full w-full px-32 overflow-scroll pb-32'>
                     {props.children}
                 </div>
             </div>
