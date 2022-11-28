@@ -26,7 +26,7 @@ const Part = (props) => {
 const Header = () => {
 
     return(
-        <div className='bg-gray-700 h-64 w-full flex cursor-default z-10'>
+            <div className='bg-gray-700 h-64 w-full flex cursor-default z-10' id="header-background" >
             <span className='basis-1/4 flex h-full items-center justify-center gap-4'>
                 <Link href={"https://www.instagram.com/ville_d_angers/"} target={"_blank"}>
                     <Image className='invert cover h-14 w-14 hover:opacity-75 transition-opacity' height={100} width={100} src={require('../assets/instagram.webp')} alt={'Instagram'}/>
@@ -114,10 +114,8 @@ export default function Home() {
 
 
     return(
-            <div className='flex flex-col min-h-screen selection:bg-none'>
+            <div className='flex flex-col min-h-screen bg-gray-100'>
                 <Header/>
-                <span className='hidden xl:flex bg-green-400 blur-3xl absolute top-1/3 left-40 h-96 w-96 rounded-full'></span>
-                <span className='hidden xl:flex bg-green-400 blur-3xl absolute top-2/3 right-96 h-96 w-96 rounded-full'></span>
                 <div style={{minHeight: '40rem'}} className='flex relative w-full px-6 xl:px-48 py-12 justify-around z-20'>
                     <Card state={first} setState={setFirst} title={"I - une ville en constante évolution"} text={"Voyons comment Angers se maintient en évolution en ne cessant jamais d'évoluer dans ses infrastructures, ses activités, et sa population."}/>
                     <Card state={second} setState={setSecond} title={"II - un atmosphère de vie agréable"} text={"La vie à Angers est agréable, la météo et l'aspect sociale de la ville apporte une vraie plus value en comparaison aux autres métropoles du pays."}/>
@@ -126,9 +124,9 @@ export default function Home() {
                 </div>
                 <span className='py-16 w-full justify-center flex flex-col items-center'>
                     <span className='capitalize font-bold text-3xl text-center'>tout savoir en 1 minute</span>
-                    <div className='bg-gray-500 text-white font-bold text-2xl w-1/3 h-80 flex justify-center items-center text-center my-16 z-20 cursor-default'>Vidéo</div>
+                    <video controls className=' '    > <source src='../assets/video.mp4'/> </video>
                     <div className='text-gray-500 text-2xl w-1/2 selection:bg-green-400 selection:text-white'>
-                        <span className='font-semibold'>{"Je vous résume les 6 raisons principales de vivre à Angers en 6 minutes:"}</span>
+                        <span className='font-semibold'>{"Je vous résume les 5 raisons principales de vivre à Angers en 5 minutes:"}</span>
                         <br/>
                         <br/>
                         <ul className='list-disc'>
