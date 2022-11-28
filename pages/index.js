@@ -146,14 +146,14 @@ export default function Home() {
                         </span>
                         <Image className='rounded-sm object-cover w-1/2' width={10000} height={100000} alt={"Patinoire IceParc"} src={require('../assets/iceparc.webp')}/>
                             </span>
-                            <Image className="h-72 w-72" alt={"Carte"} src={require('../assets/th.jpeg')}/>
+                            <Image className="h-72 w-72 object-cover" alt={"Carte"} src={require('../assets/th.jpeg')}/>
                         </span>
                     </Card>
                     <Card state={second} setState={setSecond} title={"II - un atmosphère de vie agréable"} text={"La vie à Angers est agréable, la météo et l'aspect sociale de la ville apporte une vraie plus value en comparaison aux autres métropoles du pays."}>
                         <span className='text-2xl flex gap-8'>
                         Angers fournit une atmosphère de vie des plus agréables tout d’abord de part sa verdure qui lui a permis d’accéder au rang de ville la plus verte de France 3 fois consécutives (2014-2017-2020) son climat exceptionnel en fait également la seule ville d’Europe capable d’accueillir le parc floral
                         Terra Botanica qui fait la culture de nombreuses plantes exotiques ou non qui nécessitent le climat tempéré d’ Angers pour vivre. L’atmosphère de vie d’Angers est également favorisée par le faible trafic automobile qui lui est favorisé par la forte densité de transport en commun au sein de la ville (Tramway, Bus …) . Le faible trafic automobile associé au transports en communs et a la verdure fait de Angers une des villes les moins polluées de France. Angers a été élue métropole la plus sure de l’ouest en 2021
-                        <Image className='rounded-sm' alt={"Pont Angers"} src={require('../assets/pontangers.webp')}/>
+                        <Image className='rounded-sm object-cover w-1/2' alt={"Pont Angers"} src={require('../assets/pontangers.webp')}/>
                         </span>
                     </Card>
                     <Card state={third} setState={setThird} title={"III - un grand patrimoine culturel et éducatif"} text={"Cette ville est dôtée d'une grande richesse culturelle, notamment dûe à son passé historique datant du Moyen-Âge. Le patrimoine Éducatif de cette ville réputée étudiante est aussi très dense."}>
