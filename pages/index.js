@@ -80,12 +80,12 @@ const Card = (props) => {
             }
         }} className={`card transition-all rounded-2xl flex flex-col px-8 justify-around hover:z ${props.state ? "w-full z-30 h-full absolute cursor-default bg-gray-100" : "relative z-10 w-1/4 h-full shadow-md hover:shadow-xl cursor-pointer bg-white hover:bg-gray-100 "}`}>
             <span className={`flex items-center justify-between ${props.state && "px-16 py-8"}`}>
-                <span className={`transition-none capitalize flex  items-center text-3xl font-bold text-center ${props.state ? "justify-start" : "justify-center"}`}>{props.title}</span>
+                <span className={`transition-none capitalize flex  items-center text-3xl font-bold text-center my-8 ${props.state ? "justify-start" : "justify-center"}`}>{props.title}</span>
                 <Image onClick={() => props.setState(false)} className={`h-9 w-9 cursor-pointer rotate-180 ${!props.state && "hidden"}`} alt={"Fermer l'article"} src={require('../assets/arrow.png')}/>
             </span>
             <span className={`basis-1/2 text-xl text-start selection:bg-green-400 selection:text-white ${props.state && "hidden"}`}>{props.text}</span>
-            <span className='flex justify-center items-center basis-1/4'>
-                <span className={`text-xl -translate-y-0.5 ${props.state && "hidden"}`}>En savoir plus</span>
+            <span className='flex my-8 justify-center items-center basis-1/4'>
+                <span className={` text-xl -translate-y-0.5 ${props.state && "hidden"}`}>En savoir plus</span>
                 <Image className={`arrow transition-all cover h-7 w-7 opacity-60 ${props.state && "hidden"}`} alt={"En savoir plus"} src={require('../assets/arrow.png')}/>
             </span>
             <div className={`w-full min-h-full ${!props.state && "hidden"}`}>
