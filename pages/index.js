@@ -151,85 +151,6 @@ export default function Home() {
     setDown(!down);
   };
 
-<<<<<<< Updated upstream
-
-
-
-
-
-
-    return(
-            <div className='flex flex-col min-h-screen bg-gray-100'>
-                <Header/>
-                <div style={{minHeight: '40rem'}} className='flex relative w-full px-6 xl:px-48 py-12 justify-around z-20'>
-                    <Card state={first} setState={setFirst} title={"I - une ville en constante évolution"} text={"Voyons comment Angers se maintient en évolution en ne cessant jamais d'évoluer dans ses infrastructures, ses activités, et sa population."}/>
-                    <Card state={second} setState={setSecond} title={"II - un atmosphère de vie agréable"} text={"La vie à Angers est agréable, la météo et l'aspect sociale de la ville apporte une vraie plus value en comparaison aux autres métropoles du pays."}/>
-                    <Card state={third} setState={setThird} title={"III - un grand patrimoine culturel et éducatif"} text={"Cette ville est dôtée d'une grande richesse culturelle, notamment dûe à son passé historique datant du Moyen-Âge. Le patrimoine Éducatif de cette ville réputée étudiante est aussi très dense."}/>
-                    <Image onClick={() => scroll()} className={`${down ? "-rotate-90" : "rotate-90"} fixed right-8 bottom-8 self-center cursor-pointer h12 w-12 transition-all animate-pulse hover:animate-none bg-gray-300 rounded-full p-2`} src={require('../assets/arrow.png')} alt={"Descendre"}/>
-                </div>
-                <span className='py-16 w-full justify-center flex flex-col items-center'>
-                    <span className='capitalize font-bold text-3xl text-center'>tout savoir en 1 minute</span>
-                    <div className='text-gray-500 text-2xl w-1/2 selection:bg-green-400 selection:text-white'>
-                        <span className='font-semibold'>{"Je vous résume les 5 raisons principales de vivre à Angers en 5 minutes:"}</span>
-                        <br/>
-                        <br/>
-                        <ul className='list-disc'>
-                            <li>
-                                {"Première raison:"}
-                                <br/>
-                                {"Angers est située à proximité des autres métropoles, elle est située à 135km de Rennes, soit 94 minutes en TGV; à 90km de Nantes, soit 54 minutes en TGV; et à 300km de Paris, soit une durée de 108 minutes en TGV."}
-                                <br/>
-                                <br/>
-                            </li>
-                            <li>
-                                {"Deuxième raison:"}
-                                <br/>
-                                {"Le prix immobilier à Angers est 3 fois moins élevé que celui de Paris, le mètre carré à Angers coûte 3000€ contre 9000€ à Paris."}
-                                <br/>
-                                <br/>
-                            </li>
-                            <li>
-                                {"Troisième raison:"}
-                                <br/>
-                                {"Angers est la ville la plus dotée d'espaces verts du pays, c'est aussi une des villes les moins poluées, et elle est dotée de nombreuses activités, notamment Terrabotanica, AquaVita, et la patinoire fraîchement construite IceParc."}
-                                <br/>
-                                <br/>
-                            </li>
-                            <li>
-                                {"Quatrième raison:"}
-                                <br/>
-                                {"Angers est la ville la plus sûre de l'Ouest et elle figure parmis les 20 villes les plus sûres du pays."}
-                                <br/>
-                                <br/>
-                            </li>
-                            <li>
-                                {"Cinquième raison:"}
-                                <br/>
-                                {"On retrouve à Angers de nombreux établissements scolaires et universitaires, comme l'Université de Saint Serge, de Belle Beille, l'Université Catholique de l'Ouest, ou encore l'ESEO, l'ESSCA, l'ESA, et de nombreux autres campus."}
-                            </li>
-                        </ul>
-
-
-
-
-
-
-                    </div>
-                </span>
-
-                <Part state={first} setState={setFirst} title={"I - une ville en constante évolution"}>
-
-                </Part>
-                <Part state={second} setState={setSecond} title={"II - un atmosphère de vie agréable"}>
-
-                </Part>
-                <Part state={third} setState={setThird} title={"III - un grand patrimoine culturel et éducatif"}>
-
-                </Part>
-            </div>
-
-    )
-=======
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Header />
@@ -274,7 +195,7 @@ export default function Home() {
         <span className="capitalize font-bold text-3xl text-center">
           tout savoir en 1 minute
         </span>
-        <ReactPlayer url="https://www.youtube.com/watch?v=ysz5S6PUM-U" />
+        <ReactPlayer url="https://youtu.be/hUn5KAPrMnM" />
         <div className="text-gray-500 text-2xl w-1/2 selection:bg-green-400 selection:text-white">
           <span className="font-semibold">
             {
@@ -348,7 +269,6 @@ export default function Home() {
       ></Part>
     </div>
   );
->>>>>>> Stashed changes
 }
 
 /*
