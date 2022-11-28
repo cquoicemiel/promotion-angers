@@ -121,7 +121,7 @@ export default function Home() {
                 <div style={{minHeight: '40rem'}} className='flex relative w-full px-6 xl:px-48 py-12 justify-around z-20'>
                     <Card state={first} setState={setFirst} title={"I - une ville en constante évolution"} text={"Voyons comment Angers se maintient en évolution en ne cessant jamais d'évoluer dans ses infrastructures, ses activités, et sa population."}/>
                     <Card state={second} setState={setSecond} title={"II - un atmosphère de vie agréable"} text={"La vie à Angers est agréable, la météo et l'aspect sociale de la ville apporte une vraie plus value en comparaison aux autres métropoles du pays."}/>
-                    <Card state={third} setState={setThird} title={"III - un grand patrimoine culturel et éducatif"} text={"On trouve dans cette Ville une richesse culturelle"}/>
+                    <Card state={third} setState={setThird} title={"III - un grand patrimoine culturel et éducatif"} text={"Cette ville est dôtée d'une grande richesse culturelle, notamment dûe à son passé historique datant du Moyen-Âge. Le patrimoine Éducatif de cette ville réputée étudiante est aussi très dense."}/>
                     <Image onClick={() => scroll()} className={`${down ? "-rotate-90" : "rotate-90"} fixed right-8 bottom-8 self-center cursor-pointer h12 w-12 transition-all animate-pulse hover:animate-none bg-gray-300 rounded-full p-2`} src={require('../assets/arrow.png')} alt={"Descendre"}/>
                 </div>
                 <span className='py-16 w-full justify-center flex flex-col items-center'>
