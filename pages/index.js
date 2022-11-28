@@ -11,7 +11,7 @@ const Part = (props) => {
 
 
     return(
-        <div style={props.state? {left: 0, opacity: 1} : {left: '-100%', opacity: 0}} className={`w-screen h-screen fixed bg-white top-0 bottom-0 transition-all z-30 overflow-y-scroll px-12 py-8`}>
+        <div style={props.state? {left: 0, opacity: 1} : {left: '-100%', opacity: 0}} className={`w-screen h-screen fixed bg-white top-64 bottom-0 transition-all z-30 overflow-y-scroll px-12 py-8`}>
             <div className='h-24 flex justify-around items-center'>
                 <span className='basis-5/6 flex items-center pl-8 text-3xl xl:text-4xl font-semibold capitalize'>{props.title}</span>
                 <Image onClick={() => {props.setState(false)}} className={'rotate-180 contain h-10 w-10 cursor-pointer box-content p-1 hover:invert hover:border-white bg-white transition-all border-2 border-black rounded-xl'} src={require('../assets/arrow.png')} alt={"Back"}/>
@@ -54,12 +54,12 @@ const Header = () => {
 const Card = (props) => {
 
     return(
-        <div style={{minHeight: 'calc(24rem + 5vw)'}} onClick={() => {props.setState(true)}} className='card rounded-2xl w-full h-full w-1/4 shadow-xl flex flex-col px-8 cursor-pointer shadow-md hover:shadow-xl transition-all hover:bg-gray-100 bg-white z-10 justify-around hover:z'>
-            <span className='capitalize basis-1/4 flex justify-center items-center text-2xl font-bold text-center'>{props.title}</span>
+        <div style={{minHeight: 'calc(24rem + 5vw)'}} onClick={() => {props.setState(!props.state)}} className={`card transition-all rounded-2xl flex flex-col px-8 cursor-pointer hover:bg-gray-100 bg-white justify-around hover:z ${props.state ? "w-full z-30 h-full absolute" : "relative z-10 w-1/4 h-full shadow-md hover:shadow-xl"}`}>
+            <span className={`capitalize basis-1/4 flex  items-center text-2xl font-bold text-center ${props.state ? "justify-start" : "justify-center"}`}>{props.title}</span>
             <span className='basis-1/2 text-xl text-start selection:bg-green-400 selection:text-white'>{props.text}</span>
             <span className='flex justify-center items-center basis-1/4'>
-                <span className='text-xl -translate-y-0.5'>En savoir plus</span>
-                <Image className='arrow transition-all cover h-7 w-7 opacity-60' alt={"En savoir plus"} src={require('../assets/arrow.png')}/>
+                <span className={`text-xl -translate-y-0.5 ${props.state && "hidden"}`}>En savoir plus</span>
+                <Image className={`arrow transition-all cover h-7 w-7 opacity-60 ${props.state && "hidden"}`} alt={"En savoir plus"} src={require('../assets/arrow.png')}/>
             </span>
         </div>
     )
@@ -172,15 +172,7 @@ export default function Home() {
                     </div>
                 </span>
 
-                <Part state={first} setState={setFirst} title={"I - une ville en constante évolution"}>
 
-                </Part>
-                <Part state={second} setState={setSecond} title={"II - un atmosphère de vie agréable"}>
-
-                </Part>
-                <Part state={third} setState={setThird} title={"III - un grand patrimoine culturel et éducatif"}>
-
-                </Part>
             </div>
 
     )
