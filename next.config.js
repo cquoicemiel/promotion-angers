@@ -1,10 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = {
+  target: "serverless",
+  async rewrites() {
+    return [
+      // Rewrite everything to `pages/index`
+      {
+        source: "/:any*",
+        destination: "/",
+      },
+    ];
+  },
 };
-
-module.exports = nextConfig;
-
-const withVideos = require("next-videos");
-
-module.exports = withVideos();
