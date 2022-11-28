@@ -138,15 +138,15 @@ export default function Home() {
                         <span className='text-2xl flex flex-col gap-8 justify-center items-center'>
                             <span className='flex flex-row gap-8'>
                                 Angers est une ville en constante évolution de par sa population qui a évolué de 25 % en 30ans ainsi que par toutes ses nouvelles infrastructures en train d’émerger parmi lesquelles la 2nd ligne de tramway de la ville ainsi que la nouvelle patinoire Ice parc qui a abrité la finale de coupe du monde de hockey sur glace féminin, dans des villes en constantes évolutions telles qu’Angers, les prix des habitions s’envolent souvent très vite, ce n’est pas le cas d’Angers qui malgré sa constante évolution garde un prix raisonnable de 3000€/ m² .  Un grand quartier d’affaire est en construction de le centre ville ce qui pourrait encore élever le statut de la grande ville qu’est Angers . Angers a également signé un contrat qui fera d’elle la première ville connéctée de France .
-                        <Image className='rounded-sm object-cover' alt={"Ligne Tram"} src={require('../assets/tram.webp')}/>
+                         <Image className='rounded-sm object-cover w-1/2' width={10000} height={100000} alt={"Ligne Tram"} src={require('../assets/tram.webp')}/>
                             </span>
                     <span className='flex flex-row gap-8'>
                         <span className='opacity-0'>
-                                                            Angers est une ville en constante évolution de par sa population qui a évolué de 25 % en 30ans ainsi que par toutes ses nouvelles infrastructures en train d’émerger parmi lesquelles la 2nd ligne de tramway de la ville ainsi que la nouvelle patinoire Ice parc qui a abrité la finale de coupe du monde de hockey sur glace féminin, dans des villes en constantes évolutions telles qu’Angers, les prix des habitions s’envolent souvent très vite, ce n’est pas le cas d’Angers qui malgré sa constante évolution garde un prix raisonnable de 3000€/ m² .  Un grand quartier d’affaire est en construction de le centre ville ce qui pourrait encore élever le statut de la grande ville qu’est Angers . Angers a également signé un contrat qui fera d’elle la première ville connéctée de France .
-
+                            Angers est une ville en constante évolution de par sa population qui a évolué de 25 % en 30ans ainsi que par toutes ses nouvelles infrastructures en train d’émerger parmi lesquelles la 2nd ligne de tramway de la ville ainsi que la nouvelle patinoire Ice parc qui a abrité la finale de coupe du monde de hockey sur glace féminin, dans des villes en constantes évolutions telles qu’Angers, les prix des habitions s’envolent souvent très vite, ce n’est pas le cas d’Angers qui malgré sa constante évolution garde un prix raisonnable de 3000€/ m² .  Un grand quartier d’affaire est en construction de le centre ville ce qui pourrait encore élever le statut de la grande ville qu’est Angers . Angers a également signé un contrat qui fera d’elle la première ville connéctée de France .
                         </span>
-                        <Image className='rounded-sm object-cover' alt={"Patinoire IceParc"} src={require('../assets/iceparc.webp')}/>
+                        <Image className='rounded-sm object-cover w-1/2' width={10000} height={100000} alt={"Patinoire IceParc"} src={require('../assets/iceparc.webp')}/>
                             </span>
+                            <Image className="h-72 w-72" alt={"Carte"} src={require('../assets/th.jpeg')}/>
                         </span>
                     </Card>
                     <Card state={second} setState={setSecond} title={"II - un atmosphère de vie agréable"} text={"La vie à Angers est agréable, la météo et l'aspect sociale de la ville apporte une vraie plus value en comparaison aux autres métropoles du pays."}>
