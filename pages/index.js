@@ -124,7 +124,7 @@ export default function Home() {
                 </div>
                 <span className='py-16 w-full justify-center flex flex-col items-center'>
                     <span className='capitalize font-bold text-3xl text-center'>tout savoir en 1 minute</span>
-                    <video controls className=' '    > <source src='../assets/video.mp4'/> </video>
+                    <video  width="320" height="240"  autoPlay controls  poster='../assets/poster.png'> <source src='../assets/video.mp4' type="video/mp4"/> </video>
                     <div className='text-gray-500 text-2xl w-1/2 selection:bg-green-400 selection:text-white'>
                         <span className='font-semibold'>{"Je vous résume les 5 raisons principales de vivre à Angers en 5 minutes:"}</span>
                         <br/>
