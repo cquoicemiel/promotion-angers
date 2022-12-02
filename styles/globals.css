@@ -10,3 +10,8 @@
 .card:hover .arrow{
     transform: translateX(15px);
 }
+
+*::selection{
+    background-color: rgb(74, 222, 128);
+    color: white;
+}
