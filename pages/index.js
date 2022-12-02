@@ -54,7 +54,15 @@ const Header = () => {
           </span>
           <span className="basis-1/2 flex flex-col">
             <span className="text-3xl md:text-4xl  xl:text-5xl font-bold flex justify-center w-full pt-16 pb-8 text-white z-30">
-              Vivre à Angers
+              Vivre&nbsp;à&nbsp;{"  "}
+              <a
+                className="underline hover:text-blue-200 hover:transition-all "
+                href={
+                  "https://www.google.fr/maps/place/Angers/@47.4819487,-0.5979541,13z/data=!3m1!4b1!4m5!3m4!1s0x480878da00e58e9d:0x40d37521e0d9c30!8m2!3d47.4711616!4d-0.5518257"
+                }
+              >
+                Angers
+              </a>
             </span>
             <span className="text-2xl xl:text-2xl flex text-gray-200 flex w-full pb-28 justify-center text-center z-30 px-2">
               Découvrez pourquoi Angers est la ville dont vous avez besoin
@@ -135,7 +143,15 @@ const Header = () => {
           </span>
 
           <span className="text-4xl h-1/3 py-4 box-border font-bold flex justify-center w-full text-white z-30">
-            Vivre à Angers
+            Vivre à{" "}
+            <a
+              className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
+              href={
+                "https://www.google.fr/maps/place/Angers/@47.4819487,-0.5979541,13z/data=!3m1!4b1!4m5!3m4!1s0x480878da00e58e9d:0x40d37521e0d9c30!8m2!3d47.4711616!4d-0.5518257"
+              }
+            >
+              Angers
+            </a>
           </span>
 
           <span className="text-xl flex box-border text-gray-100 flex h-1/3 w-full justify-center text-center z-30">
@@ -300,7 +316,7 @@ export default function Home() {
                 "Angers est une ville en constante évolution, l'augmentation de la population de 25% en 30 ans illustre bien cette évolution, ainsi que toutes les nouvelles infrastructures de la ville en train d’émerger parmi lesquelles la 2nd ligne de tramway de la ville ainsi que la nouvelle patinoire "
               }
               <a
-                className="text-blue-300 underline hover:text-blue-400 "
+                className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
                 href={"https://www.angers-iceparc.com/"}
               >
                 Ice Parc
@@ -309,7 +325,7 @@ export default function Home() {
                 " qui a abrité la finale de coupe du monde de hockey sur glace féminin, dans des villes en constantes évolutions telles qu’Angers, les prix des habitations s’envolent souvent très vite, Angers n'échappe pas à la logique mais les prix restent raisonnables, ils sont actuellement de 3000€/ m² en moyenne.  Un grand quartier d’affaires est en construction dans le centre ville, ce qui pourrait encore élever le statut de la grande ville qu’est Angers. Depuis 2020, le groupe industriel énergétique français "
               }
               <a
-                className="text-blue-300 underline hover:text-blue-400 "
+                className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
                 href={"https://particuliers.engie.fr/"}
               >
                 Engie
@@ -318,7 +334,7 @@ export default function Home() {
                 " a décidé d'investir environ 120 millions d'euros en 25 ans pour faire de "
               }
               <a
-                className="text-blue-300 underline hover:text-blue-400 "
+                className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
                 href={
                   "https://www.engie.com/journalistes/communiques-de-presse/creer-premier-territoire-intelligent-france"
                 }
@@ -329,7 +345,7 @@ export default function Home() {
                 "de France, les innovations vont notamment viser l'optimisation de l'éclairage publique. La courbe d'évolution d'Angers est également propulsé par ses liens avec les autres métropoles avoisinantes facilités par la gare d'Angers,"
               }{" "}
               <a
-                className="text-blue-300 underline hover:text-blue-400 "
+                className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
                 href={
                   "https://www.garesetconnexions.sncf/fr/gares-services/angers-saint-laud"
                 }
@@ -376,8 +392,56 @@ export default function Home() {
           <span className="text-2xl flex flex-col md:flex-row gap-8 justify-around">
             <span className="cursor-text basis-1/2">
               {
-                "Angers fournit une atmosphère de vie des plus agréables tout d’abord de part sa verdure qui lui a permi d’accéder au rang de ville la plus verte de France 3 fois consécutives (2014-2017-2020), son climat exceptionnel en fait également la seule ville d’Europe capable d’accueillir le parc floral Terra Botanica, où de développe de nombreuses plantes, exotiques ou non, qui nécessitent le climat tempéré d’Angers pour vivre. L’atmosphère de vie d’Angers est également favorisée par le faible trafic automobile qui est notamment dû à la forte densité de transports en commun au sein de la ville (Tramways, Bus, Navettes). Le faible trafic automobile associé au transports en communs et a la verdure fait de Angers une des villes les moins polluées de France. Angers a été élue métropole la plus sûre de l’Ouest en 2021"
+                "Angers fournit une atmosphère de vie des plus agréables tout d’abord de part sa verdure qui lui a permi d’accéder au rang de ville la plus verte de France 3 fois consécutives ("
               }
+              <a
+                className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
+                href={
+                  "https://www.lefigaro.fr/flash-actu/2014/02/19/97001-20140219FILWWW00075-angers-ville-la-plus-verte-de-france.php"
+                }
+              >
+                2014
+              </a>
+              {"-"}
+              <a
+                className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
+                href={
+                  "https://www.lenergietoutcompris.fr/actualites-conseils/villes-les-plus-vertes-de-france-qui-est-en-tete-48117#:~:text=Comme%20lors%20du%20premier%20palmar%C3%A8s%20%C3%A9tabli%20en%202014%2C,professionnelle%20regroupant%20les%20responsables%20d%E2%80%99espaces%20verts%20en%20ville."
+                }
+              >
+                2017
+              </a>
+              {"-"}
+              <a
+                className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
+                href={
+                  "https://www.18h39.fr/articles/classement-villes-vertes-france.html"
+                }
+              >
+                2020
+              </a>
+              {
+                "), son climat exceptionnel en fait également la seule ville d’Europe capable d’accueillir le parc floral"
+              }
+              <br />
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={"https://www.terrabotanica.fr/"}
+              >
+                Terra Botanica
+              </a>
+              {
+                ", où se développent de nombreuses plantes, exotiques ou non, qui nécessitent le climat tempéré d’Angers pour vivre. L’atmosphère de vie d’Angers est également favorisée par le faible trafic automobile qui est notamment dû à la forte densité de transports en commun au sein de la ville (Tramways, Bus, Navettes). Le faible trafic automobile associé au transports en communs et a la verdure fait de Angers "
+              }
+              <a
+                className="text-blue-300 underline hover:text-blue-400 hover:transition-all"
+                href={
+                  "https://www.linternaute.com/actualite/monde/1031263-particules-fines-les-villes-les-plus-et-les-moins-polluees-du-monde/1031269-villes-les-moins-polluees-d-europe"
+                }
+              >
+                une des villes les moins polluées de France
+              </a>
+              {". Angers a été élue métropole la plus sûre de l’Ouest en 2021"}
             </span>
             <span className="flex h-full flex-col justify-start gap-2  md:w-1/2 xl:w-1/3">
               <CustomImage
