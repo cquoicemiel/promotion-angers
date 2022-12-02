@@ -436,7 +436,7 @@ export default function Home() {
               <a
                 className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
                 href={
-                  "https://www.linternaute.com/actualite/monde/1031263-particules-fines-les-villes-les-plus-et-les-moins-polluees-du-monde/1031269-villes-les-moins-polluees-d-europe"
+                  "https://www.linternaute.com/actualite/monde/1031263-particules-fines-les-villes-les-plus-et-les-moins-polluees-du-monde/1031266-les-villes-les-moins-polluees-de-france"
                 }
               >
                 une des villes les moins polluées de France
