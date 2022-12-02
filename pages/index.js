@@ -295,9 +295,49 @@ export default function Home() {
           }
         >
           <span className="text-2xl flex flex-col md:flex-row gap-8 justify-around">
-            <span className="cursor-text basis-1/2 flex h-full">
+            <span className="cursor-text basis-1/2 ">
               {
-                "Angers est une ville en constante évolution, l'augmentation de la population de 25% en 30 ans illustre bien cette évolution, ainsi que toutes les nouvelles infrastructures de la ville en train d’émerger parmi lesquelles la 2nd ligne de tramway de la ville ainsi que la nouvelle patinoire IceParc qui a abrité la finale de coupe du monde de hockey sur glace féminin, dans des villes en constantes évolutions telles qu’Angers, les prix des habitations s’envolent souvent très vite, Angers n'échappe pas à la logique mais les prix restent raisonnables, ils sont actuellement de 3000€/ m² en moyenne.  Un grand quartier d’affaires est en construction dans le centre ville, ce qui pourrait encore élever le statut de la grande ville qu’est Angers. Depuis 2020, le groupe industriel énergétique français Engie a décidé d'investir environ 120 millions d'euros en 25 ans pour faire de Angers un le premier territoire intelligent de France, les innovations vont notamment viser l'optimisation de l'éclairage publique. La courbe d'évolution d'Angers est également propulsé par ses liens avec les autres métropoles avoisinantes facilités par la gare Angers Saint-Laud qui dessert des destinations telles que Paris Nantes ou encore Rennes"
+                "Angers est une ville en constante évolution, l'augmentation de la population de 25% en 30 ans illustre bien cette évolution, ainsi que toutes les nouvelles infrastructures de la ville en train d’émerger parmi lesquelles la 2nd ligne de tramway de la ville ainsi que la nouvelle patinoire "
+              }
+              <a
+                className="text-blue-300 underline hover:text-blue-400 "
+                href={"https://www.angers-iceparc.com/"}
+              >
+                Ice Parc
+              </a>
+              {
+                " qui a abrité la finale de coupe du monde de hockey sur glace féminin, dans des villes en constantes évolutions telles qu’Angers, les prix des habitations s’envolent souvent très vite, Angers n'échappe pas à la logique mais les prix restent raisonnables, ils sont actuellement de 3000€/ m² en moyenne.  Un grand quartier d’affaires est en construction dans le centre ville, ce qui pourrait encore élever le statut de la grande ville qu’est Angers. Depuis 2020, le groupe industriel énergétique français "
+              }
+              <a
+                className="text-blue-300 underline hover:text-blue-400 "
+                href={"https://particuliers.engie.fr/"}
+              >
+                Engie
+              </a>
+              {
+                " a décidé d'investir environ 120 millions d'euros en 25 ans pour faire de "
+              }
+              <a
+                className="text-blue-300 underline hover:text-blue-400 "
+                href={
+                  "https://www.engie.com/journalistes/communiques-de-presse/creer-premier-territoire-intelligent-france"
+                }
+              >
+                Angers le premier territoire intelligent
+              </a>{" "}
+              {
+                "de France, les innovations vont notamment viser l'optimisation de l'éclairage publique. La courbe d'évolution d'Angers est également propulsé par ses liens avec les autres métropoles avoisinantes facilités par la gare d'Angers,"
+              }{" "}
+              <a
+                className="text-blue-300 underline hover:text-blue-400 "
+                href={
+                  "https://www.garesetconnexions.sncf/fr/gares-services/angers-saint-laud"
+                }
+              >
+                Angers Saint-Laud
+              </a>
+              {
+                " qui dessert des destinations telles que Paris Nantes ou encore Rennes"
               }
             </span>
             <span className="flex h-full flex-col justify-start gap-2  md:w-1/2 xl:w-1/3">
