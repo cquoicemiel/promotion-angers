@@ -493,7 +493,7 @@ export default function Home() {
               }{" "}
               <a
                 className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
-                href={"https://www.uco.fr/fr"}
+                href={"https://eseo.fr/"}
               >
                 ESEO
               </a>
