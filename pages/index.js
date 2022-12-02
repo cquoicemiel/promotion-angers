@@ -353,7 +353,7 @@ export default function Home() {
                 Angers Saint-Laud
               </a>
               {
-                " qui dessert des destinations telles que Paris Nantes ou encore Rennes"
+                " qui dessert de nombreuses destinations telles que Paris Nantes ou encore Rennes"
               }
             </span>
             <span className="flex h-full flex-col justify-start gap-2  md:w-1/2 xl:w-1/3">
@@ -471,7 +471,81 @@ export default function Home() {
           <span className="text-2xl flex flex-col md:flex-row gap-8 justify-around">
             <span className="cursor-text basis-1/2">
               {
-                "Angers possède un grand patrimoine éducatif composé de grandes écoles telles que les différentes universités de l'Université d'Angers, qui s'étend sur 3 campus (Belle-Beille, Saint-Serge, Santé) et qui compte près de 26 000 étudiants, on trouve aussi de grands établissements tel que l'Université Catholique de l'Ouest qui est réputée dans tout le pays notamment pour ses formations en Théologie et sciences religieuses, on trouve aussi des écoles d'ingénieurs: l'ESAIP, l'ESA, l'ESEO, l'ISTIA, pour des études artistiques Angers habrite la prestigieuse école des Beaux-Arts qui attire de nombreux étudiants, des établissements de prépas médecine, des écoles pour des filiaires agricoles comme l'ESA notamment. La ville possède aussi un fort patrimoine historique. En effet, des vestiges du passés sont présents à tout endroit de la ville et sa périphérie, notamment l’aérodrome d’Avrillé chargé d’histoire qui jusque dans les années 80 abritait encore des ballets aériens d’aéroplanes, le principal attrait historique étant le château du Roi  René, monument majeur au sein de la ville fièrement, installé depuis le XIIIe siècle sur le promontoire rocheux qui domine la Maine, le château d’Angers est l’emblème de la ville avec ses 17 imposantes tours défensives. Occupé depuis le Néolithique, ce site très ancien est un haut-lieu de l’histoire angevine, Le château d’Angers est fortement marqué par les aménagements réalisés par les ducs d’Anjou, notamment le dernier d’entre eux, le roi René (1409-1480) qui voulait faire de l’Anjou « le jardin de la France ». René d’Anjou est considéré comme précurseur de l’horticulture en Anjou. Il fait cultiver la vigne et importe en Anjou des essences méditerranéennes. Entre histoire, innovation et développement durable, les jardins du château d’Angers sont un reflet du patrimoine végétal de l’Anjou. Aujourd’hui, le château d’Angers recèle différents jardins que vous aurez bonheur à découvrir en vivant à Angers. Ils sont un havre de paix pour les visiteurs comme pour la faune et la flore sauvage qui y sont protégées au titre de la biodiversité."
+                "Angers possède un grand patrimoine éducatif composé de grandes écoles telles que les différentes universités de l'"
+              }
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={"https://www.univ-angers.fr/fr/index.html"}
+              >
+                Université d&apos;Angers
+              </a>
+              {
+                ", qui s'étend sur 3 campus (Belle-Beille, Saint-Serge, Santé) et qui compte près de 26 000 étudiants, on trouve aussi de grands établissements tel que l'"
+              }
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={"https://www.uco.fr/fr"}
+              >
+                Université Catholique de l&apos;Ouest
+              </a>
+              {
+                " qui est réputée dans tout le pays notamment pour ses formations en Théologie et sciences religieuses, on trouve aussi des écoles d'ingénieurs: "
+              }{" "}
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={"https://www.uco.fr/fr"}
+              >
+                ESEO
+              </a>
+              {","}
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={"https://www.esaip.org/"}
+              >
+                ESAIP
+              </a>
+              {"."}
+              {
+                " Pour des études artistiques Angers abrite la prestigieuse école des"
+              }{" "}
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={"https://esad-talm.fr/"}
+              >
+                Beaux Arts
+              </a>
+              {
+                " qui attire de nombreux étudiants. On y trouve aussi, des établissements de prépas médecine ou encore des écoles pour des filiaires agricoles comme l'"
+              }{" "}
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={"https://www.groupe-esa.com/"}
+              >
+                ESA
+              </a>
+              {
+                " notamment. La ville possède aussi un fort patrimoine historique. En effet, des vestiges du passés sont présents à tout endroit de la ville et sa périphérie, notamment l’"
+              }{" "}
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={
+                  "https://www.anciens-aerodromes.com/AtlasDGACOct16/html/aero20.htm"
+                }
+              >
+                Aérodrome d&apos;Avrillé
+              </a>
+              {
+                " chargé d’histoire qui, jusque dans les années 80 abritait encore des ballets aériens d’aéroplanes, le principal attrait historique étant le, "
+              }{" "}
+              <br />
+              <a
+                className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+                href={"https://www.chateau-angers.fr/#"}
+              >
+                Chateau du Roi René
+              </a>
+              {
+                ", monument majeur au sein de la ville fièrement, installé depuis le XIIIe siècle sur le promontoire rocheux qui domine la Maine, le château d’Angers est l’emblème de la ville avec ses 17 imposantes tours défensives. Occupé depuis le Néolithique, ce site très ancien est un haut-lieu de l’histoire angevine, Le château d’Angers est fortement marqué par les aménagements réalisés par les ducs d’Anjou, notamment le dernier d’entre eux, le roi René (1409-1480) qui voulait faire de l’Anjou « le jardin de la France ». René d’Anjou est considéré comme précurseur de l’horticulture en Anjou. Il fait cultiver la vigne et importe en Anjou des essences méditerranéennes. Entre histoire, innovation et développement durable, les jardins du château d’Angers sont un reflet du patrimoine végétal de l’Anjou. Aujourd’hui, le château d’Angers recèle différents jardins que vous aurez bonheur à découvrir en vivant à Angers. Ils sont un havre de paix pour les visiteurs comme pour la faune et la flore sauvage qui y sont protégées au titre de la biodiversité."
               }
             </span>
             <span className="flex h-full flex-col justify-start gap-2  md:w-1/2 xl:w-1/3">
