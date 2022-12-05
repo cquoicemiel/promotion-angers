@@ -164,13 +164,17 @@ const Header = () => {
 };
 
 const LinkedText = (props) => {
-
-return(
-  <Link href={props.link} target={"_blank"}>
-  <a classname="text-blue-400 underline hover:text-blue-500 hover:transition-all">{props.text}</a>
-  </Link>
-)
-}
+  return (
+    <a
+      href={props.link}
+      target="_blank"
+      rel="noreferrer"
+      className="text-blue-400 underline hover:text-blue-500 hover:transition-all"
+    >
+      {props.text}
+    </a>
+  );
+};
 
 const CustomImage = (props) => {
   return (
@@ -324,19 +328,28 @@ export default function Home() {
               {
                 "Angers est une ville en constante évolution, l'augmentation de la population de 25% en 30 ans illustre bien cette évolution, ainsi que toutes les nouvelles infrastructures de la ville en train d’émerger parmi lesquelles la 2nd ligne de tramway de la ville ainsi que la nouvelle patinoire "
               }
-              <LinkedText link="https://www.angers-iceparc.com/" text="Ice Parc"/>
+              <LinkedText
+                link="https://www.angers-iceparc.com/"
+                text="Ice Parc"
+              />
               {
                 " qui a abrité la finale de coupe du monde de hockey sur glace féminin, dans des villes en constantes évolutions telles qu’Angers, les prix des habitations s’envolent souvent très vite, Angers n'échappe pas à la logique mais les prix restent raisonnables, ils sont actuellement de 3000€/ m² en moyenne.  Un grand quartier d’affaires est en construction dans le centre ville, ce qui pourrait encore élever le statut de la grande ville qu’est Angers. Depuis 2020, le groupe industriel énergétique français "
               }
-              <LinkedText link="https://particuliers.engie.fr/" text="Engie"/>
+              <LinkedText link="https://particuliers.engie.fr/" text="Engie" />
               {
                 " a décidé d'investir environ 120 millions d'euros en 25 ans pour faire de Angers le premier "
               }
-              <LinkedText link="https://www.engie.com/journalistes/communiques-de-presse/creer-premier-territoire-intelligent-france" text="territoire intelligent"/>
+              <LinkedText
+                link="https://www.engie.com/journalistes/communiques-de-presse/creer-premier-territoire-intelligent-france"
+                text="territoire intelligent"
+              />
               {
                 "de France, les innovations vont notamment viser l'optimisation de l'éclairage publique. La courbe d'évolution d'Angers est également propulsé par ses liens avec les autres métropoles avoisinantes facilités par la gare d'Angers,"
               }{" "}
-              <LinkedText link="https://www.garesetconnexions.sncf/fr/gares-services/angers-saint-laud" text="Angers Saint-Laud"/>
+              <LinkedText
+                link="https://www.garesetconnexions.sncf/fr/gares-services/angers-saint-laud"
+                text="Angers Saint-Laud"
+              />
               {
                 " qui dessert de nombreuses destinations telles que Paris Nantes ou encore Rennes"
               }
@@ -379,23 +392,41 @@ export default function Home() {
               {
                 "Angers fournit une atmosphère de vie des plus agréables tout d’abord de part sa verdure qui lui a permi d’accéder au rang de ville la plus verte de France 3 fois consécutives ("
               }
-              <LinkedText link="https://www.lefigaro.fr/flash-actu/2014/02/19/97001-20140219FILWWW00075-angers-ville-la-plus-verte-de-france.php" text="2014"/>
+              <LinkedText
+                link="https://www.lefigaro.fr/flash-actu/2014/02/19/97001-20140219FILWWW00075-angers-ville-la-plus-verte-de-france.php"
+                text="2014"
+              />
               {"-"}
-              <LinkedText link="https://www.lenergietoutcompris.fr/actualites-conseils/villes-les-plus-vertes-de-france-qui-est-en-tete-48117#:~:text=Comme%20lors%20du%20premier%20palmar%C3%A8s%20%C3%A9tabli%20en%202014%2C,professionnelle%20regroupant%20les%20responsables%20d%E2%80%99espaces%20verts%20en%20ville." text="2017 />
-              
+              <LinkedText
+                link="https://www.lenergietoutcompris.fr/actualites-conseils/villes-les-plus-vertes-de-france-qui-est-en-tete-48117#:~:text=Comme%20lors%20du%20premier%20palmar%C3%A8s%20%C3%A9tabli%20en%202014%2C,professionnelle%20regroupant%20les%20responsables%20d%E2%80%99espaces%20verts%20en%20ville."
+                text="2017"
+              />
               {"-"}
-              <LinkeText link="https://www.18h39.fr/articles/classement-villes-vertes-france.html" text="2020"/>
+              <LinkedText
+                link="https://www.18h39.fr/articles/classement-villes-vertes-france.html"
+                text="2020"
+              />
+
               {
                 "), son climat exceptionnel en fait également la seule ville d’Europe capable d’accueillir le parc floral"
               }
-              <br/>
-              <LinkedText link="https://www.terrabotanica.fr/" text="Terra Botanica"/>
-              
+
+              <br />
+              <LinkedText
+                link="https://www.terrabotanica.fr/"
+                text="Terra Botanica"
+              />
+
               {
                 ", où se développent de nombreuses plantes, exotiques ou non, qui nécessitent le climat tempéré d’Angers pour vivre. L’atmosphère de vie d’Angers est également favorisée par le faible trafic automobile qui est notamment dû à la forte densité de transports en commun au sein de la ville (Tramways, Bus, Navettes). Le faible trafic automobile associé au transports en communs et a la verdure fait de Angers une des villes les "
               }
-              <LinkedText link="https://www.linternaute.com/actualite/monde/1031263-particules-fines-les-villes-les-plus-et-les-moins-polluees-du-monde/1031266-les-villes-les-moins-polluees-de-france" text="moins polluées"/>
-              {" de France. Angers a été élue métropole la plus sûre de l’Ouest en 2021"}
+              <LinkedText
+                link="https://www.linternaute.com/actualite/monde/1031263-particules-fines-les-villes-les-plus-et-les-moins-polluees-du-monde/1031266-les-villes-les-moins-polluees-de-france"
+                text="moins polluées"
+              />
+              {
+                " de France. Angers a été élue métropole la plus sûre de l’Ouest en 2021"
+              }
             </span>
             <span className="flex h-full flex-col justify-start gap-2  md:w-1/2 xl:w-1/3">
               <CustomImage
@@ -427,35 +458,47 @@ export default function Home() {
               {
                 "Angers possède un grand patrimoine éducatif composé de grandes écoles telles que les différentes universités de l'"
               }
-              <LinkedText link="https://www.univ-angers.fr/fr/index.html" text="Université d&apos;Angers"/>
+              <LinkedText
+                link="https://www.univ-angers.fr/fr/index.html"
+                text="Université d'Angers"
+              />
               {
                 ", qui s'étend sur 3 campus (Belle-Beille, Saint-Serge, Santé) et qui compte près de 26 000 étudiants, on trouve aussi de grands établissements tel que l'"
               }
-              <LinkedText link="https://www.uco.fr/fr" text="Université Catholique de l&apos;Ouest"/>
+              <LinkedText
+                link="https://www.uco.fr/fr"
+                text="Université Catholique de l'Ouest"
+              />
               {
                 " qui est réputée dans tout le pays notamment pour ses formations en Théologie et sciences religieuses, on trouve aussi des écoles d'ingénieurs: "
               }{" "}
               <LinkedText link="https://eseo.fr/" text="ESEO" />
               {","}
-              <LinkedText link="https://www.esaip.org/" text="ESAIP"/>
+              <LinkedText link="https://www.esaip.org/" text="ESAIP" />
               {"."}
               {
                 " Pour des études artistiques Angers abrite la prestigieuse école des"
               }{" "}
-              <LinkedText link="https://esad-talm.fr/" text="Beaux-Arts"/>
+              <LinkedText link="https://esad-talm.fr/" text="Beaux-Arts" />
               {
                 " qui attire de nombreux étudiants. On y trouve aussi, des établissements de prépas médecine ou encore des écoles pour des filiaires agricoles comme l'"
               }{" "}
-              <LinkedText link="https://www.groupe-esa.com/" text="ESA"/>
+              <LinkedText link="https://www.groupe-esa.com/" text="ESA" />
               {
                 " notamment. La ville possède aussi un fort patrimoine historique. En effet, des vestiges du passés sont présents à tout endroit de la ville et sa périphérie, notamment l’"
               }{" "}
-              <LinkedText link="https://www.anciens-aerodromes.com/AtlasDGACOct16/html/aero20.htm" text="Aérodrome d&apos;Avrillé"/>
+              <LinkedText
+                link="https://www.anciens-aerodromes.com/AtlasDGACOct16/html/aero20.htm"
+                text="Aérodrome d'Avrillé"
+              />
               {
                 " chargé d’histoire qui, jusque dans les années 80 abritait encore des ballets aériens d’aéroplanes, le principal attrait historique étant le, "
               }{" "}
               <br />
-              <LinkedText link="https://www.chateau-angers.fr/#" text="Chateau du Roi René"/>
+              <LinkedText
+                link="https://www.chateau-angers.fr/#"
+                text="Chateau du Roi René"
+              />
               {
                 ", monument majeur au sein de la ville fièrement, installé depuis le XIIIe siècle sur le promontoire rocheux qui domine la Maine, le château d’Angers est l’emblème de la ville avec ses 17 imposantes tours défensives. Occupé depuis le Néolithique, ce site très ancien est un haut-lieu de l’histoire angevine, Le château d’Angers est fortement marqué par les aménagements réalisés par les ducs d’Anjou, notamment le dernier d’entre eux, le roi René (1409-1480) qui voulait faire de l’Anjou « le jardin de la France ». René d’Anjou est considéré comme précurseur de l’horticulture en Anjou. Il fait cultiver la vigne et importe en Anjou des essences méditerranéennes. Entre histoire, innovation et développement durable, les jardins du château d’Angers sont un reflet du patrimoine végétal de l’Anjou. Aujourd’hui, le château d’Angers recèle différents jardins que vous aurez bonheur à découvrir en vivant à Angers. Ils sont un havre de paix pour les visiteurs comme pour la faune et la flore sauvage qui y sont protégées au titre de la biodiversité."
               }
