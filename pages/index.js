@@ -341,10 +341,10 @@ export default function Home() {
               }
               <LinkedText
                 link="https://www.engie.com/journalistes/communiques-de-presse/creer-premier-territoire-intelligent-france"
-                text="territoire intelligent"
+                text="territoire intelligent "
               />
               {
-                "de France, les innovations vont notamment viser l'optimisation de l'éclairage publique. La courbe d'évolution d'Angers est également propulsé par ses liens avec les autres métropoles avoisinantes facilités par la gare d'Angers,"
+                " de France, les innovations vont notamment viser l'optimisation de l'éclairage publique. La courbe d'évolution d'Angers est également propulsé par ses liens avec les autres métropoles avoisinantes facilités par la gare d'Angers,"
               }{" "}
               <LinkedText
                 link="https://www.garesetconnexions.sncf/fr/gares-services/angers-saint-laud"
